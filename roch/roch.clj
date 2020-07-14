@@ -1,7 +1,7 @@
 (ns roch
   (:require [clojure.java.io :as io]
-            [clojure.data.csv :as csv]
-            ))
+            [clojure.data.csv :as csv]))
+
 
 ;; recursively descend into folders and find invoices with Camp or Roch in the title.
 ;; parse the date of the file name it will be either 20150425 format or 2015-04-25 format.
@@ -30,5 +30,5 @@
   (def path (io/file dir))
   (.isDirectory path)
   (def children (.listFiles path))
-  (file-tree (io/file dir))
-  )
+  (file-tree (io/file dir)))
+

@@ -1,2 +1,2 @@
-{:paths []
- :deps []}
+{:paths ["/babashka/roch"]
+ :deps {tubular {:mvn/version "1.4.0"}}}
